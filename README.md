@@ -1,101 +1,167 @@
-# TalentGate
+## TalentGate
 
-**TalentGate** is an AI-assisted hiring platform designed to reduce friction for job seekers and speed up decision-making for employers — without removing human control.
+TalentGate is a modern, AI-assisted hiring platform built around a simple idea:
+one living profile, verified hiring, and faster decisions — without removing human control.
 
-This repository is a **technical and product showcase**.  
-The production codebase is private.
-
----
+This repository serves as a technical + product showcase of the TalentGate MVP.
+The full production codebase is private.
 
 ## 🚀 What Problem TalentGate Solves
+### For Job Seekers
 
-### Job Seekers
-- Rewriting the same resume and details for every application
-- No visibility into why resumes fail ATS checks
-- Poor job recommendations with low signal quality
+- Re-entering the same details and resumes for every application
 
-### Employers
+- No clarity on why resumes fail ATS checks
+
+- Low-signal job recommendations and spammy listings
+
+- Fragmented profiles across platforms
+
+### For Employers
+
 - Time-consuming resume screening
-- ATS systems that lack transparency
-- Difficulty identifying best-fit candidates quickly
 
----
+- ATS systems that feel opaque and rigid
 
-## ✨ Core Features
+- Difficulty quickly identifying best-fit candidates
 
+- Noise from unverified or low-intent applicants
+
+### ✨ Core Product Concept
+- One Living Profile (Job Seekers)
+
+- Instead of repeatedly filling forms, job seekers maintain one evolving profile:
+
+- Identity & contact info
+
+- Education, experience, skills
+
+- Resume uploads & versions
+
+- (Planned) ATS score and AI improvement suggestions
+
+- This profile auto-fills applications and improves over time.
+
+- Verified Hiring (Both Roles)
+
+- All users start in read-only mode
+
+- Verification unlocks full interaction
+
+## Helps ensure:
+
+- Real candidates
+
+- Real employers
+
+- Higher trust across the platform
+
+## 🧩 Core Features
 ### Job Seekers
-- One evolving profile (personal info, resume, skills)
-- Resume builder with ATS score & suggestions
-- AI-powered job recommendations
-- One-click applications
+
+- Single evolving profile
+
+- Resume builder & uploads
+
+- ATS score insights (planned)
+
+- One-click job applications
+
+- (Planned) Swipe-style apply flow with AI resume tweaks
 
 ### Employers
-- Clean recruiter dashboard
-- Swipe-based applicant review
-- Benchmark-based candidate grouping
-- AI-assisted shortlisting (human-approved)
 
----
+- Recruiter dashboard
 
-## 🧠 Engineering Highlights
+- Job posting & applicant tracking
 
-- Versioned REST APIs
+- Swipe-based candidate review (planned)
+
+- Benchmark-based shortlisting
+
+- AI match signals (final decision always human)
+
+### 🧠 Engineering Highlights
+
+- App-like UI architecture with shared and role-based sections
+
 - Role-based authentication & authorization
-- Dev-only tooling guarded by environment checks
+
+- Verification-gated interactions (read-only vs full access)
+
+- Clean separation of frontend and backend
+
 - Scalable MongoDB data models
-- Clean separation of frontend & backend concerns
 
----
+- Future-ready AI service isolation
 
-## 🏗️ Tech Stack
+### 🏗️ Tech Stack
 
-**Frontend**
-- React + TypeScript
-- Tailwind CSS
-- Vite
+### Frontend
+```
+React + TypeScript
 
-**Backend**
-- Node.js + Express
-- MongoDB + Mongoose
-- JWT authentication
-- RESTful API design
+Tailwind CSS
 
----
+Vite
 
-## 📐 System Architecture
+App-style routing & guards
 
-High-level system design and data flow are documented here:  
-👉 [`architecture/system-design.md`](architecture/system-design.md)
+Backend
 
----
+Node.js + Express
 
-## 🔌 API Contracts
+MongoDB + Mongoose
 
-Example API contracts used by the frontend:  
-👉 [`api-contract/jobs-api.md`](api-contract/jobs-api.md)
+JWT-based authentication
 
----
+RESTful API design
+```
+### 📐 System Architecture
 
-## 🔐 Code Access
+- High-level system design, flows, and decisions are documented here:
+👉 docs/engineering/architecture.md
 
-The full production implementation is private.
+### 🔌 API Contracts
 
-This repository exists to showcase:
+- Example API contracts used by the frontend:
+-👉 docs/engineering/api-contracts.md
+
+### 🔐 Code Access
+
+- The complete production implementation is private.
+
+- This repository exists to demonstrate:
+
 - Product thinking
-- System design
-- API structure
-- Engineering decisions
 
----
+- System and app architecture
 
-## 🧪 Project Status
+- Frontend structure & UX decisions
 
-- Current stage: **Soft launch preparation**
-- Planned next steps:
-  - UI polish
-  - Job detail pages
-  - Employer job posting
-  - Waitlist onboarding
+- API design patterns
+
+- Engineering trade-offs
+
+### 🧪 Project Status
+
+- Current stage: MVP UI foundation complete
+
+### Now working on:
+
+- UI polish across all pages
+
+- Feed, Trending & Communities refinement
+
+- Job flows for seekers & employers
+
+### Next steps:
+
+- Job detail pages
+
+- Employer job posting flow
+
+- Public preview & waitlist onboarding
 
 ---
 
